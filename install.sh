@@ -3,10 +3,6 @@ wget https://dl.google.com/go/go1.13.6.linux-amd64.tar.gz
 tar -xvf go1.13.6.linux-amd64.tar.gz
 sudo mv go /usr/local
 
-echo 'export GOROOT=/usr/local/go' >> ~/.bashrc 
-echo 'export GOPATH=$HOME/workspace' >> ~/.bashrc 
-echo 'export PATH=$GOROOT/bin:$GOPATH/bin:$PATH' >> ~/.bashrc
-
-source ~/.profile
+source .bashrc
 
 go version
